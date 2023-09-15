@@ -349,7 +349,8 @@ class Sqint(App):
                'editfield': FieldEditor(),
                'insertrow': InsertEditor()}
     BINDINGS = [Binding("o", "push_screen('opendb')", "Open Database"),
-                Binding("d", "toggle_dark", "Toggle dark mode")]
+                Binding("d", "toggle_dark", "Toggle dark mode"),
+                Binding("q", "quit", "Quit")]
 
     def __init__(self, dbpath: str = None):
         super().__init__()
